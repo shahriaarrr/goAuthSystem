@@ -1,6 +1,7 @@
 package main
 
 import (
+	"go-jwt/controllers"
 	"go-jwt/initializers"
 
 	"github.com/gin-gonic/gin"
@@ -20,6 +21,8 @@ func main() {
 			"message": "pong",
 		})
 	})
+
+	r.POST("/signup", controllers.Signup)
 
 	r.Run()
 }
