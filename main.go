@@ -1,9 +1,9 @@
 package main
 
 import (
-	"go-jwt/controllers"
-	"go-jwt/initializers"
-	"go-jwt/middleware"
+	"goAuthSystem/controllers"
+	"goAuthSystem/initializers"
+	"goAuthSystem/middleware"
 
 	"github.com/gin-gonic/gin"
 )

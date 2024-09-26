@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"go-jwt/initializers"
-	"go-jwt/models"
+	"goAuthSystem/initializers"
+	"goAuthSystem/models"
 	"net/http"
 	"os"
 	"time"

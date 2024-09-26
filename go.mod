@@ -1,4 +1,4 @@
-module go-jwt
+module goAuthSystem
 
 go 1.22.5
 
