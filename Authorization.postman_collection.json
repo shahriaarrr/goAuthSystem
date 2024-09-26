@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "31814179-08f2-4af9-ab15-046efaa35e0f",
+		"name": "goAuthSystem",
+		"description": "This collection contains endpoints for the goAuthSystem, a CRUD JWT-based authentication service built using Golang. The collection is designed to demonstrate user signup, login, and token validation, providing essential operations for user authentication.\n\n### API Endpoints:\n\n1. **POST** **`/signup`**  \n    Registers a new user by taking an email and password and storing the user in the database.\n    \n2. **POST** **`/login`**  \n    Authenticates a registered user and provides a JWT token for further requests.\n    \n3. **GET** **`/validate`**  \n    Validates the JWT token to allow access to protected routes.\n    \n\n### Usage\n\nTo test these endpoints:\n\n- Use the **/signup** endpoint to create a new user.\n    \n- After signing up, use the **/login** endpoint to receive a JWT token.\n    \n- For protected routes, pass the JWT token in the `Authorization` header (e.g., `Bearer` ) when making requests to **/validate**.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21691506"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"john@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"john@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/validate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"validate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
