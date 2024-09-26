@@ -51,7 +51,7 @@ This is a simple JWT (JSON Web Token) authentication system built using Golang. 
 3. Create a `.env` file and add your JWT secret key and database credentials:
    ```bash
    PORT=3000
-   DB="host=localhost	user={PUT_YOUR_USERNAME} password={PUT_YOUR_PASSWORD} dbname={PUT_YOUR_DB_NAME} port=5432 sslmode=disable"
+   DB="host=localhost user={PUT_YOUR_USERNAME} password={PUT_YOUR_PASSWORD} dbname={PUT_YOUR_DB_NAME} port=5432 sslmode=disable"
    SECRET={YOUR_SECRET_KEY}
    ```
 
